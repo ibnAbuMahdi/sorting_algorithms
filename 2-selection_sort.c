@@ -12,8 +12,6 @@ void selection_sort(int *arr, size_t s)
 	size_t i, j;
 	int temp;
 
-	if (!arr)
-		return;
 	if (s < 2)
 	{
 		print_array(arr, s);
