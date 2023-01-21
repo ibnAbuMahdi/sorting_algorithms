@@ -20,7 +20,7 @@ int main(void)
 
 {
 
-	    int array[] = {48, 3};
+	    int array[] = {1, 1,1};
 
 	        size_t n = sizeof(array) / sizeof(array[0]);
 
