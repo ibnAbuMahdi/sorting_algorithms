@@ -21,13 +21,13 @@ void selection_sort(int *arr, size_t s)
 		return;
 	}
 
-	for (i = 0; i < s; i++)
+	for (i = 0; i < s - 1; i++)
 	{
 		int min, pos = i;
 
 		temp = arr[i];
 		min = arr[pos];
-		for (j = i ; j < s; j++)
+		for (j = i + 1; j < s; j++)
 		{
 			if (min > arr[j])
 			{
