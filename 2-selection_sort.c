@@ -12,10 +12,10 @@ void selection_sort(int *arr, size_t s)
 	size_t i, j;
 	int temp;
 
-	if (!arr)
+	if (!arr || s == 0)
 		return;
 
-	if (s < 2)
+	if (s == 1)
 	{
 		print_array(arr, s);
 		return;
