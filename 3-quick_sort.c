@@ -11,8 +11,9 @@
 
 void quick_sort(int *arr, size_t s)
 {
-
-	if (!arr || s == 1 || s == 0)
+	if(!arr)
+		return;
+	if (s < 2)
 	{
 		print_array(arr, s);
 		return;
