@@ -12,10 +12,10 @@ void selection_sort(int *arr, size_t s)
 	size_t i, j;
 	int temp;
 
-	if (!arr || s == 0)
+	if (!arr)
 		return;
 
-	if (s == 1)
+	if (s < 2)
 	{
 		print_array(arr, s);
 		return;
@@ -39,7 +39,8 @@ void selection_sort(int *arr, size_t s)
 		{
 			arr[i] = min;
 			arr[pos] = temp;
-			print_array(arr, s);
+			if ((int) i != pos)
+				print_array(arr, s);
 		}
 
 	}
