@@ -39,8 +39,7 @@ void selection_sort(int *arr, size_t s)
 		{
 			arr[i] = min;
 			arr[pos] = temp;
-			if ((int) i != pos)
-				print_array(arr, s);
+			print_array(arr, s);
 		}
 
 	}
