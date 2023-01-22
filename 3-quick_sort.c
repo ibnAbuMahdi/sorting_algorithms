@@ -63,7 +63,7 @@ int partition(int *arr, int lo, int hi, int s)
 	i = lo - 1;
 	for (j = lo; j < hi; j++)
 	{
-		if (arr[j] < pivot)
+		if (arr[j] <= pivot)
 		{
 			i++;
 			swap((arr + i), (arr + j));
