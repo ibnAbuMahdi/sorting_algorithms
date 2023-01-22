@@ -33,9 +33,8 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
-void sort_deck(deck_node_t **deck);
-
-<<<<<<< HEAD
+/*void sort_deck(deck_node_t **deck);
+*/
 
 void quicksort(int *, int, int, int);
 
@@ -43,6 +42,3 @@ int partition(int *, int, int, int);
 
 void swap(int *, int *);
 #endif /* SORT_H */
-=======
-#endif
->>>>>>> 740765bda8326ec729e0e53f8069266146c2bfe0
