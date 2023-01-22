@@ -76,7 +76,16 @@ int partition(int *arr, int lo, int hi, int s)
 	return (i);
 }
 
+/**
+ * swap - swaps two elements in an array
+ * @a: first element
+ * @b: second element
+ */
 
-
-
+void swap(int *a, int *b)
+{
+	int t = *a;
+	*a = *b;
+	*b = t;
+}
 

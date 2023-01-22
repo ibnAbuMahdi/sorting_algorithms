@@ -24,18 +24,18 @@ void print_array(const int *array, size_t size)
 	printf("\n");
 }
 
-/**
- * swap - swaps two elements in an array
- * @a: first element
- * @b: second element
- */
 
-void swap(int *a, int *b)
-{
-	int t = *a;
-	*a = *b;
-	*b = t;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * print_list - Prints a list of integers
