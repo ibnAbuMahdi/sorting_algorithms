@@ -25,4 +25,11 @@ void print_list(const listint_t *);
 
 void selection_sort(int *, size_t);
 
+void quick_sort(int *, size_t);
+
+void quicksort(int *, int, int, int);
+
+int partition(int *, int, int, int);
+
+void swap(int *, int *);
 #endif /* SORT_H */
