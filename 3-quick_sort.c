@@ -67,12 +67,14 @@ int partition(int *arr, int lo, int hi, int s)
 		{
 			i++;
 			swap((arr + i), (arr + j));
-			print_array(arr, s);
+			if (i != j)
+				print_array(arr, s);
 		}
 	}
 	i++;
 	swap((arr + i), (arr + hi));
-	print_array(arr, s);
+	if (i != hi)
+		print_array(arr, s);
 	return (i);
 }
 
