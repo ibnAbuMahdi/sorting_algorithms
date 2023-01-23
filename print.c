@@ -24,19 +24,6 @@ void print_array(const int *array, size_t size)
 	printf("\n");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * print_list - Prints a list of integers
  *
