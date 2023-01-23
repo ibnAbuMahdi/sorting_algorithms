@@ -44,4 +44,14 @@ void swap(int *, int *);
 void swap_head(listint_t **, listint_t **, listint_t **);
 
 void swap_tail(listint_t **, listint_t **, listint_t **);
+
+void mergesort(int *, int, int);
+
+void merge(int *, int, int, int);
+
+void print_sub_array(int *, int, int);
+
+void rearrange(int *, int *, int, int);
+
+
 #endif /* SORT_H */
