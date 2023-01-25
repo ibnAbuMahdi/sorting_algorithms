@@ -49,9 +49,12 @@ void mergesort(int *, int, int);
 
 void merge(int *, int, int, int);
 
-void print_sub_array(int *, int, int);
+void print_sub_array(const int *, int, int);
 
 void rearrange(int *, int *, int, int);
 
+void quicksort_hoare(int *, int, int, int);
+
+int partition_hoare(int *, int, int, int);
 
 #endif /* SORT_H */

@@ -1,0 +1,422 @@
+==5633== Memcheck, a memory error detector
+==5633== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5633== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5633== Command: ./merge
+==5633== Parent PID: 5621
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109488: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49480 is 0 bytes inside a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109545: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49484 is 2 bytes after a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB988: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Use of uninitialised value of size 8
+==5633==    at 0x48AF6CB: _itoa_word (_itoa.c:179)
+==5633==    by 0x48CB5A4: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48AF6DD: _itoa_word (_itoa.c:179)
+==5633==    by 0x48CB5A4: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CC258: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB71E: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1096D0: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49484 is 2 bytes after a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1095EC: rearrange (in /root/sorting_algorithms/merge)
+==5633==    by 0x109592: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49484 is 2 bytes after a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109314: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109488: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a494d0 is 0 bytes inside a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109545: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a494d4 is 2 bytes after a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1096D0: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a494d4 is 2 bytes after a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1095EC: rearrange (in /root/sorting_algorithms/merge)
+==5633==    by 0x109592: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a494d4 is 2 bytes after a block of size 2 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109386: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB988: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x109427: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Use of uninitialised value of size 8
+==5633==    at 0x48AF6CB: _itoa_word (_itoa.c:179)
+==5633==    by 0x48CB5A4: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x109427: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48AF6DD: _itoa_word (_itoa.c:179)
+==5633==    by 0x48CB5A4: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x109427: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CC258: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x109427: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB71E: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x109427: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x10945B: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x1094BB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49520 is 0 bytes inside a block of size 3 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109506: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49528 is 5 bytes after a block of size 3 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1096D0: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49524 is 1 bytes after a block of size 3 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1095EC: rearrange (in /root/sorting_algorithms/merge)
+==5633==    by 0x109592: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49524 is 1 bytes after a block of size 3 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x109328: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB988: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x1093FF: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CC258: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x1093FF: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB71E: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x109662: print_sub_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x1093FF: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x10945B: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x1094BB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49574 is 4 bytes inside a block of size 5 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109488: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a4957c is 7 bytes after a block of size 5 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid write of size 4
+==5633==    at 0x109545: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49580 is 11 bytes after a block of size 5 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1096D0: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10957C: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49578 is 3 bytes after a block of size 5 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Invalid read of size 4
+==5633==    at 0x1095EC: rearrange (in /root/sorting_algorithms/merge)
+==5633==    by 0x109592: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633==  Address 0x4a49578 is 3 bytes after a block of size 5 alloc'd
+==5633==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5633==    by 0x1093CB: merge (in /root/sorting_algorithms/merge)
+==5633==    by 0x109344: mergesort (in /root/sorting_algorithms/merge)
+==5633==    by 0x1092B2: merge_sort (in /root/sorting_algorithms/merge)
+==5633==    by 0x10923E: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB988: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10925B: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CC258: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10925B: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== Conditional jump or move depends on uninitialised value(s)
+==5633==    at 0x48CB71E: __vfprintf_internal (vfprintf-internal.c:1687)
+==5633==    by 0x48B5D6E: printf (printf.c:33)
+==5633==    by 0x1096E4: print_array (in /root/sorting_algorithms/merge)
+==5633==    by 0x10925B: main (in /root/sorting_algorithms/merge)
+==5633== 
+==5633== 
+==5633== HEAP SUMMARY:
+==5633==     in use at exit: 0 bytes in 0 blocks
+==5633==   total heap usage: 5 allocs, 5 frees, 1,036 bytes allocated
+==5633== 
+==5633== All heap blocks were freed -- no leaks are possible
+==5633== 
+==5633== Use --track-origins=yes to see where uninitialised values come from
+==5633== For lists of detected and suppressed errors, rerun with: -s
+==5633== ERROR SUMMARY: 78 errors from 35 contexts (suppressed: 0 from 0)

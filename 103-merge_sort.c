@@ -14,6 +14,7 @@ void merge_sort(int *arr, size_t s)
 		mergesort(arr, 0, (int) (s - 1));
 	else if (arr && s == 1)
 		printf("[Done]: %d\n", arr[0]);
+
 }
 
 /**
@@ -49,24 +50,24 @@ void mergesort(int *arr, int l, int r)
  * @l: the left bound
  * @r: the right bound
  * @m: the middle point
- * @arr: the array to sort
+ * @array: the array to sort
  */
 
-void merge(int *arr, int l, int m, int r)
+void merge(int *array, int l, int m, int r)
 {
 	int i = l, j = m + 1, k = 0;
-	int *sub_arr;
+	int *sub_arr, *arr = array;
 
-	sub_arr = malloc(r - l + 1);
+	sub_arr = malloc(sizeof(int) * (r - l + 1));
 	if (!sub_arr)
 		return;
 	printf("Merging...\n[Left]: ");
-	print_sub_array((int *) arr, l, m);
+	print_sub_array(arr, l, m);
 	printf("[Right]: ");
-	print_sub_array((int *) arr, m + 1, r);
+	print_sub_array(arr, m + 1, r);
 	while (i <= m && j <= r)
 	{
-		if (arr[i] <= arr[j])
+		if (*(arr + i) <= *(arr + j))
 		{
 			sub_arr[k] = arr[i];
 			i++;
@@ -123,7 +124,7 @@ void rearrange(int *arr, int *sub_arr, int k, int l)
  * @r: right index in @array
  */
 
-void print_sub_array(int *array, int l, int r)
+void print_sub_array(const int *array, int l, int r)
 {
 	int i = 0;
 
